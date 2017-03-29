@@ -1,13 +1,16 @@
-﻿{
+
+{
   "pages":[
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "我的人生解答书",
-    "navigationBarTextStyle":"black",
-    "backgroundColor":"#fff"
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#000",
+    "height":"100%"
   }
 }
+

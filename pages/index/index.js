@@ -3,27 +3,46 @@
 var app = getApp()
 Page({
   data: {
-    motto1: '等你很久啦，你总算来啦。',
-    motto2: '心中默念你的疑问，然后点击上方的人生解答书吧！',
+    state:true,
+    motto1: '我等你很久啦！',
+    motto2: '当你迷茫或者无奈的时候，心中默念你的疑问，然后点击上方的人生解答书吧！',
     img:"./bookclose.jpg",
     userInfo: {},
-    answer:' '
+    answer:' ',
+    memo:'2',
    },
   
    //事件处理函数
   bindViewTap: function() {
-    if(motoo1 != ' ')
-    {exit}
 
      this.setData({ motto1: ' '})
      this.setData({ motto2: ' '})
      this.setData({ img: './bookopen.gif'})
      this.setData({ userInfo:{}})
 
-    if ( parseInt(10*Math.random()) == 1)
+    if (!this.data.state)
+    {
+    
+     this.setData({state:true})
+     this.setData({ img: './bookclose.jpg'})
+     this.setData({answer: ' '})
+     this.setData({motto1: '希望我的答案对你有帮助!\n如果你还有什么困惑，再次点击打开这本神奇的书吧!'})
+
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo(function(userInfo){
+      //更新数据
+      that.setData({
+        userInfo:userInfo
+      })
+    })
+     return 
+     }
+
+   if (parseInt(10*Math.random()) == 1)
     {
       this.setData({
-      answer: '完全没有问题，放心吧！'})
+      answer1: '完全没有问题，放心吧！'})
     }
     else if(parseInt(10*Math.random()) == 2)
     {
@@ -70,9 +89,7 @@ Page({
       this.setData({
       answer: '我回答不了！'})
     }
-//    wx.navigateTo({
-//    url: '../logs/logs'
-//    })
+     this.setData({state:false})
     },
   onLoad: function () {
     console.log('onLoad')
