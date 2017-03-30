@@ -6,7 +6,7 @@ Page({
     state:true,
     motto1: '我等你很久啦！',
     motto2: '当你迷茫或者无奈的时候，心中默念你的疑问，然后点击上方的人生解答书吧！',
-    img:"./bookclose.jpg",
+    img:"./img2.jpg",
     userInfo: {},
     answer:' ',
    },
@@ -39,14 +39,14 @@ Page({
      }
 
 
-    var count=parseInt(20*Math.random())
+    var count=parseInt(40*Math.random())
     var answer=new Array
     answer[1]='完全没有问题，放心吧！'
     answer[2]='正是好机会！'
     answer[3]='你会很累的。'
     answer[4]='问问你妈妈吧！'
     answer[5]='问问你爸爸吧！'
-    answer[6]='我觉得你像咪蒙，真能写。'
+    answer[6]='我觉得你像咪蒙，真能瞎掰。'
     answer[7]='加油吧！'
     answer[8]='早点睡觉吧。'
     answer[9]='吃吃饱，然后开始吧！'
@@ -61,6 +61,27 @@ Page({
     answer[18]='吃一顿好的，听听音乐！'
     answer[19]='人生需要烦恼的太多，这个就别管他了！'
     answer[20]='好吧，哈哈！'
+    answer[21]='算了吧！'
+    answer[22]='有风险也有机会！'
+    answer[23]='找个人给你点意见！'
+    answer[24]='谁说的准呢？先观望着'
+    answer[25]='把心揣在怀里。'
+    answer[26]='请教一下你的爸爸。'
+    answer[27]='去争取机会。'
+    answer[28]='不要再等了。'
+    answer[29]='执行力，懂不懂？'
+    answer[30]='这个我不想多说了。'
+    answer[31]='放心吧，没有问题的。'
+    answer[32]='不可预测。'
+    answer[33]='学会妥协。'
+    answer[34]='不要害怕。'
+    answer[35]='不确定因素有点多。'
+    answer[36]='有时候就随波逐流吧。'
+    answer[37]='有时候随波逐流不是好事情。'
+    answer[38]='你需要一个承诺。'
+    answer[39]='花更多的时间来决定。'
+    answer[40]='你需要一点时间。'
+
 
     if (answer[count]=='')
     {
