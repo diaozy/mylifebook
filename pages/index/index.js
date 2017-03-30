@@ -16,7 +16,7 @@ Page({
  
      this.setData({ motto1: ' '})
      this.setData({ motto2: ' '})
-     this.setData({ img: './bookopen.gif'})
+     this.setData({ img: './book1.gif'})
      this.setData({ userInfo:{}})
 
     if (!this.data.state)
