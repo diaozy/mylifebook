@@ -6,7 +6,7 @@ Page({
     state:true,
     motto1: '我等你很久啦！',
     motto2: '当你迷茫或者无奈的时候，心中默念你的疑问，然后点击上方的人生解答书吧！',
-    img:"./img2.jpg",
+    img:"../../image/bookclose.jpg",
     userInfo: {},
     answer:' ',
    },
@@ -16,14 +16,14 @@ Page({
  
      this.setData({ motto1: ' '})
      this.setData({ motto2: ' '})
-     this.setData({ img: './book1.gif'})
+     this.setData({ img: '../../image/bookopen.gif'})
      this.setData({ userInfo:{}})
 
     if (!this.data.state)
     {
     
      this.setData({state:true})
-     this.setData({ img: './bookclose.jpg'})
+     this.setData({ img: '../../image/bookclose.jpg'})
      this.setData({answer: ' '})
      this.setData({motto1: '希望我的答案对你有帮助!\n如果你还有什么困惑，再次点击打开这本神奇的书吧!'})
 
