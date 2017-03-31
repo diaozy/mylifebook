@@ -24,3 +24,9 @@
   margin-right:20%;
   color: #000;
   }
+
+.answer-input {
+  height: 2.58823529em;
+  min-height: 2.58823529em;
+  line-height: 2.58823529em;
+}
