@@ -16,6 +16,14 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+function sleep(delay)
+{
+  var start = new Date().getTime();
+  while (new Date().getTime() < start + delay);
+}
+
 module.exports = {
   formatTime: formatTime
 }
+
+

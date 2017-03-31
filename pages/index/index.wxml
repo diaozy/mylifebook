@@ -7,7 +7,7 @@
     <text class="user-motto">{{userInfo.nickName}}\n{{motto1}}\n\n{{motto2}}</text>
     <text class="user-motto">{{answer}}</text>
 
-    <input  class="answer-input" auto-focus placeholder="或者在这里输入你的疑问..."/>
+    <input  class="answer-input"   bindinput="bindKeyInput" focus ="auto" confirm-type ="提问" placeholder="或者在这里输入你的疑问..."/>
       <button type="default">提问</button>
   </view>
 

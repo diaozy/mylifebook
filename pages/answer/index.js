@@ -1,8 +1,6 @@
 //index.js
 //获取应用实例
 var app = getApp()
-var util = require('../../utils/util.js')
-
 Page({
   data: {
     state:true,
@@ -20,14 +18,6 @@ Page({
     })
   },
 
- sleep :function(e)
-{
-  var start = new Date().getTime()
-  while (new Date().getTime() < start + delay);
-},
-
-
-
    //事件处理函数
   bindViewTap: function() {
  
@@ -35,8 +25,6 @@ Page({
      this.setData({ motto2: ' '})
      this.setData({ img: '../../image/bookopen.gif'})
      this.setData({ userInfo:{}})
-    
-    sleep(1)
 
     if (!this.data.state)
     {
@@ -109,11 +97,8 @@ Page({
      this.setData({answer:answer[count]})
 
      this.setData({state:false})
-
-    wx.navigateTo({ url: '../answer/index' })
-    },
-
-
+      
+   },
   onLoad: function () {
     console.log('onLoad')
     var that = this
