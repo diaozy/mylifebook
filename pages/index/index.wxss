@@ -29,5 +29,5 @@
   height: 2.58823529em;
   min-height: 2.58823529em;
   line-height: 2.58823529em;
-  font-size:0.8em;
+  font-size:1em;
 }

@@ -9,8 +9,7 @@
 
     <input  id='answer-input' class="answer-input"   bindinput="bindKeyInput"  confir style='{{input_sts}}'
       placeholder='{{question}}'/>
- <button type="default" bindtap="bindViewTap"  hidden = '{{button_sts}}' >提问</button>
-    <text class="user-motto">{{question}}</text>
+ <button type="default" bindtap="bindViewTap"  hidden = '{{button_sts}}' plain = "true">提问</button>
   </view>
 
 </view>

@@ -27,23 +27,15 @@ Page({
      this.setData({ img: '../../image/bookopen.gif'})
      this.setData({userInfo:{}})
      this.setData({motto1: '正在打开请稍等!'})
+     this.setData({motto2: ' '})
 
-     if(this.data.question='')
-     {
-      this.setData({motto2:''})
-     }
-     else
-     {
-      this.setData({motto2:'你的疑问：'+ this.data.question})
-     }
-     
      this.setData({button_sts:1})
      this.setData({input_sts:'visibility: hidden;'})
 
      var start = new Date().getTime()
-     while (new Date().getTime() < start + 2500);
+     while (new Date().getTime() < start + 2200);
 
-      wx.navigateTo({ url: '../answer/index' })
+      wx.redirectTo({ url: '../answer/answer' })
     },
 
 

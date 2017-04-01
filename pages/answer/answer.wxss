@@ -13,8 +13,3 @@
   line-height: 2.58823529em;
 }
 
-page {
-  background-image: url("../../image/bookclose.jpg");
-  background-repeat:round;
-  background-size: auto;
-}

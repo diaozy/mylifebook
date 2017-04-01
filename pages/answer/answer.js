@@ -75,8 +75,12 @@ Page({
     }
      this.setData({answer:answer[count]})
 
-  }
+  },
 
+   //事件处理函数
+  bindViewTap: function() {
 
+      wx.redirectTo({ url: '../index/index' })
+    },
 
  })
