@@ -9,31 +9,12 @@ Page({
     img:"../../image/bookclose.jpg",
     userInfo: {},
     answer:' ',
-    qa:'',
+    question:'',
    },
   
-  bindKeyInput: function(e) {
-    this.setData({
-      qa: e.detail.value
-    })
-  },
 
-   //事件处理函数
-  bindViewTap: function() {
- 
-     this.setData({ motto1: ' '})
-     this.setData({ motto2: ' '})
-     this.setData({ img: '../../image/bookopen.gif'})
-     this.setData({ userInfo:{}})
-
-    if (!this.data.state)
-    {
-    
-     this.setData({state:true})
-     this.setData({ img: '../../image/bookclose.jpg'})
-     this.setData({answer: ' '})
-     this.setData({motto1: '希望我的答案对你有帮助!\n如果你还有什么困惑，再次点击打开这本神奇的书吧!'})
-
+  onLoad: function () {
+    console.log('onLoad')
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
@@ -41,12 +22,10 @@ Page({
       that.setData({
         userInfo:userInfo
       })
+      
     })
-     return 
-     }
 
-
-    var count=parseInt(40*Math.random())
+   var count=parseInt(40*Math.random())
     var answer=new Array
     answer[1]='完全没有问题，放心吧！'
     answer[2]='正是好机会！'
@@ -96,18 +75,8 @@ Page({
     }
      this.setData({answer:answer[count]})
 
-     this.setData({state:false})
-      
-   },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
   }
-})
+
+
+
+ })
