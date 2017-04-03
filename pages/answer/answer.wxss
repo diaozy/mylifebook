@@ -1,15 +1,31 @@
 /**index.wxss**/
 
 .usermotto {
-  height: 100%;
-  margin-top: 200rpx;
-  margin-left:20%;
+  float:left;
+  margin-top: 120rpx;
+  margin-left:8%;
   margin-right:20%;
+  }
+
+.usermotto1 {
+  float:left;
+  margin-top: 220rpx;
+  margin-left:5%;
+  margin-right:20%;
+  font-size:0.8em;
+  color: #aaa;
   }
 
 .answer-input {
   height: 2.58823529em;
   min-height: 2.58823529em;
   line-height: 2.58823529em;
+  font-size:1em;
 }
 
+.answer-button {
+  margin-left:15%;
+  margin-right:10%;
+  font-size:1em;
+  
+}

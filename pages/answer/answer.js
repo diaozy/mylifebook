@@ -3,18 +3,40 @@
 var app = getApp()
 Page({
   data: {
-    state:true,
+    state:0,
     motto1: '我等你很久啦！',
     motto2: '当你迷茫或者无奈的时候，心中默念你的疑问，然后点击上方的人生解答书吧！',
     img:"../../image/bookclose.jpg",
     userInfo: {},
-    answer:' ',
+    answer:'',
     question:'',
    },
+
+  onShareAppMessage: function () {
+    return {
+      title: '我困惑时就打开了这本书...',
+      path: '/pages/answer/answer?question='+this.data.question+'&answer='+this.data.answer+'&userInfo='+ this.data.userInfo.nickname+'&state=1',
+      success: function(res) {
+        // 分享成功
+      },
+      fail: function(res) {
+        // 分享失败
+      }
+    }
+  },
   
 
-  onLoad: function () {
+  onLoad: function (option) {
     console.log('onLoad')
+
+    if (option.state==1){
+      this.setData({answer:option.answer})
+      this.setData({question:option.question})
+      this.setData({userInfo:option.userInfo})
+      return
+    }
+
+
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
@@ -24,6 +46,7 @@ Page({
       })
       
     })
+   this.setData({question:option.question})
 
    var count=parseInt(40*Math.random())
     var answer=new Array
@@ -79,7 +102,6 @@ Page({
 
    //事件处理函数
   bindViewTap: function() {
-
       wx.redirectTo({ url: '../index/index' })
     },
 

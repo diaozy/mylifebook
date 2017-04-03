@@ -1,11 +1,9 @@
 <!--index.wxml-->
-<view class="container_answer" >
+<view class="container_answer"    >
   <view class="usermotto">
-    <text class="user-motto">{{userInfo.nickName}}\n\n</text>
-          <text class="user-motto">{{answer}}</text>
-
-          <text class="user-motto">{{question}}\n\n\n</text>
- <button type="default" bindtap="bindViewTap"  plain="true" >再次提问</button>
+<text class="usermotto"> {{answer}}\n\n</text>
+<text class="usermotto1"> {{userInfo.nickName}} 刚才的疑问：\n{{question}}\n\n</text>
+ <button class="answer-button" type="default" size="mini" bindtap="bindViewTap"  plain="true" >再次提问</button>
   </view>
 
 </view>

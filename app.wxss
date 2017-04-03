@@ -21,7 +21,7 @@ page {
   justify-content: space-between;
   padding: 20rpx 0;
   box-sizing: border-box;
-  background-image : url(../../image/back.jpg) ;
+  background-image : url(http://mylifebook-1253455298.cossh.myqcloud.com/images/backgroud.jpg) ;
   background-size: 100%;
   background-repeat:no-repeat;
 } 

@@ -8,8 +8,8 @@
     <text class="user-motto">{{answer}}</text>
 
     <input  id='answer-input' class="answer-input"   bindinput="bindKeyInput"  confir style='{{input_sts}}'
-      placeholder='{{question}}'/>
- <button type="default" bindtap="bindViewTap"  hidden = '{{button_sts}}' plain = "true">提问</button>
+      placeholder='尝试在这里输入你的疑问...'/>
+ <button type="default" bindtap="bindViewTap"  hidden = '{{button_sts}}' plain = "true">打开</button>
   </view>
 
 </view>
