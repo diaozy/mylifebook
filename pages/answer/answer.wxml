@@ -2,7 +2,7 @@
 <view class="container_answer"    >
   <view class="usermotto">
 <text class="usermotto"> {{answer}}\n\n</text>
-<text class="usermotto1"> {{userInfo.nickName}} 刚才的疑问：\n{{question}}\n\n</text>
+<text class="usermotto1"> {{nickName}} 刚才的疑问：\n{{question}}\n\n</text>
  <button class="answer-button" type="default" size="mini" bindtap="bindViewTap"  plain="true" >再次提问</button>
   </view>
 

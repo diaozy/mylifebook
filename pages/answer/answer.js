@@ -10,12 +10,13 @@ Page({
     userInfo: {},
     answer:'',
     question:'',
+    nickName:'',
    },
 
   onShareAppMessage: function () {
     return {
       title: '我困惑时就打开了这本书...',
-      path: '/pages/answer/answer?question='+this.data.question+'&answer='+this.data.answer+'&userInfo='+ this.data.userInfo.nickname+'&state=1',
+      path: '/pages/answer/answer?question='+this.data.question+'&answer='+this.data.answer+'&nickName='+ this.data.nickName+'&state=1',
       success: function(res) {
         // 分享成功
       },
@@ -32,7 +33,7 @@ Page({
     if (option.state==1){
       this.setData({answer:option.answer})
       this.setData({question:option.question})
-      this.setData({userInfo:option.userInfo})
+      this.setData({nickName:option.nickName})
       return
     }
 
@@ -43,6 +44,9 @@ Page({
       //更新数据
       that.setData({
         userInfo:userInfo
+      })
+      that.setData({
+      nickName:userInfo.nickName
       })
       
     })
