@@ -52,7 +52,7 @@ Page({
     })
    this.setData({question:option.question})
 
-   var count=parseInt(40*Math.random())
+   var count=parseInt(50*Math.random())
     var answer=new Array
     answer[1]='完全没有问题，放心吧！'
     answer[2]='正是好机会！'
@@ -94,6 +94,16 @@ Page({
     answer[38]='你需要一个承诺。'
     answer[39]='花更多的时间来决定。'
     answer[40]='你需要一点时间。'
+    answer[41]='当然咯'
+    answer[42]='修仙吧'
+    answer[43]='谁说的准呢，先观望着。'
+    answer[44]='千万别傻'
+    answer[45]='保持你的好奇心，去挖掘真相'
+    answer[46]='答案在镜子里'
+    answer[47]='NO'
+    answer[48]='天上要掉馅饼了'
+    answer[49]='有好运'
+    answer[50]='要有耐心'
 
 
     if (answer[count]=='')
