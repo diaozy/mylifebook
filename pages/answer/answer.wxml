@@ -5,5 +5,5 @@
 <text class="usermotto1"> {{nickName}} 刚才的疑问：\n{{question}}\n\n</text>
  <button class="answer-button" type="default" size="mini" bindtap="bindViewTap"  plain="true" >再次提问</button>
   </view>
-
+<ad unit-id="adunit-b70eb2f92df0bd9e"></ad>
 </view>
