@@ -52,7 +52,7 @@ Page({
     })
    this.setData({question:option.question})
 
-   var count=parseInt(60*Math.random())
+   var count=parseInt(65*Math.random())
     var answer=new Array
     answer[1]='完全没有问题，放心吧！'
     answer[2]='正是好机会！'
@@ -114,6 +114,11 @@ Page({
     answer[58] = '人生就是这样，别问了'
     answer[59] = '我懂！'
     answer[60] = '你需要放松下。'
+    answer[61] = '饶了我吧，这种问题就别问我了！'
+    answer[62] = '饶了我吧，这种问题就别问我了！'
+    answer[63] = '饶了我吧，这种问题就别问我了！'
+    answer[64] = '饶了我吧，这种问题就别问我了！'
+    answer[65] = '饶了我吧，这种问题就别问我了！'
 
     if (answer[count]=='')
     {

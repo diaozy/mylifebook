@@ -5,8 +5,8 @@ var app = getApp()
 Page({
   data: {
     state:0,
-    motto1: '我等你很久啦！',
-    motto2: '当你迷茫或者无奈的时候，心中默念你的疑问，然后打开人生解答书吧！',
+    motto1: '亲爱的，等你很久啦！',
+    motto2: '是否碰到了困惑或者无奈，心中默念你的疑问，然后打开人生解答书吧！',
     img:"../../images/bookclose.jpg",
     userInfo: {},
     answer:' ',
@@ -38,7 +38,7 @@ Page({
  
      this.setData({ img: '../../images/bookopen.gif'})
      this.setData({userInfo:{}})
-     this.setData({motto1: '正在打开请稍等!'})
+     this.setData({motto1: '正在打开，请稍等!'})
      this.setData({motto2: ' '})
 
      this.setData({button_sts:1})
